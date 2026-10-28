@@ -18,3 +18,4 @@
 
 .practice-grid > *, .visit-detail, .practice-aside { min-width: 0; }
 @media (max-width: 900px) { .practice-grid { grid-template-columns: minmax(0, 1fr); } }
+.resource-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:15px}.resource-actions a{display:inline-flex;align-items:center;min-height:42px;padding:9px 13px;border-radius:8px;background:#e4eeff;color:#1252cc;font-size:.86rem;font-weight:700;text-decoration:none}.resource-actions a:hover,.resource-actions a:focus-visible{background:#cbdfff;outline:2px solid #1252cc;outline-offset:2px}
