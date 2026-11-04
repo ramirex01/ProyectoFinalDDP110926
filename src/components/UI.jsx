@@ -5,7 +5,7 @@ import { areas, studentInfo } from '../data/portfolioData.js';
 export const icons = { Sparkles, School, ChartNoAxesCombined, NotebookPen, Lightbulb, FolderOpen, CalendarDays, ClipboardList, BookOpen, GraduationCap };
 
 export function StatusBadge({ state }) {
-  const tone = state === 'Documentada' || state === 'Completado' ? 'ready' : state === 'Pendiente' || state === 'Registro pendiente' ? 'pending' : 'progress';
+  const tone = state === 'Documentada' || state === 'Completado' || state === 'Presentada' ? 'ready' : state === 'Pendiente' || state === 'Registro pendiente' ? 'pending' : 'progress';
   return <span className={`status status--${tone}`}>{state}</span>;
 }
 

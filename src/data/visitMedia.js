@@ -13,7 +13,7 @@ export const visitMedia = {
   ],
   4: [{ file: 'j4-1.png', alt: 'Fotografía grupal del equipo de práctica en un aula', caption: 'Registro del equipo durante la cuarta visita.' }],
   5: [{ file: 'j5-1.png', alt: 'Fotografía del equipo de práctica en el centro escolar', caption: 'Registro del equipo durante la quinta visita.' }],
-  6: [{ file: 'j6-1.png', alt: 'Fotografía grupal del equipo de práctica durante la sexta visita', caption: 'Registro del equipo durante la sexta visita. [Video de la clase pendiente].' }],
+  6: [{ file: 'j6-1.png', alt: 'Fotografía grupal del equipo de práctica durante la sexta visita', caption: 'Registro del equipo durante la sexta visita.' }],
 };
 
 export function visitImageUrl(file) {
