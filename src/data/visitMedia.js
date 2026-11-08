@@ -14,6 +14,7 @@ export const visitMedia = {
   4: [{ file: 'j4-1.png', alt: 'Fotografía grupal del equipo de práctica en un aula', caption: 'Registro del equipo durante la cuarta visita.' }],
   5: [{ file: 'j5-1.png', alt: 'Fotografía del equipo de práctica en el centro escolar', caption: 'Registro del equipo durante la quinta visita.' }],
   6: [{ file: 'j6-1.png', alt: 'Fotografía grupal del equipo de práctica durante la sexta visita', caption: 'Registro del equipo durante la sexta visita.' }],
+  7: [{ file: 'j7-1.jpeg', alt: 'Compartir de cierre con estudiantes, docente y equipo de práctica en el aula', caption: 'Compartir de agradecimiento con la docente y el grupo.' }, { file: 'j7-2.jpeg', alt: 'Fotografía del equipo de práctica al finalizar la séptima jornada', caption: 'Equipo de práctica al concluir las siete visitas.' }],
 };
 
 export function visitImageUrl(file) {
