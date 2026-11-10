@@ -10,3 +10,5 @@ script.js
 styles.css
 vista-*.png
 qa-*.png
+private/
+tmp/

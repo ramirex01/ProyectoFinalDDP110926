@@ -30,7 +30,7 @@ export const sections = [
   { id: 4, title: 'Contexto educativo', area: 'contexto', state: 'Presentada', detail: 'Describo el centro, el grupo y los recursos a partir del diagnóstico grupal y mis observaciones.' },
   { id: 5, title: 'Planeación y organización', area: 'diagnostico', state: 'Documentada', detail: 'Presento el calendario y las actividades de mis siete visitas de práctica.' },
   { id: 6, title: 'Diagnóstico educativo', area: 'diagnostico', state: 'Presentada', detail: 'Analizo los resultados del diagnóstico grupal y sus implicaciones pedagógicas, respetando el alcance de la muestra.' },
-  { id: 7, title: 'Planificaciones de clases', area: 'diagnostico', state: 'Documentada', detail: 'Planificación aprobada de la lección 2 disponible en PDF; se distingue lo previsto de la clase realizada.' },
+  { id: 7, title: 'Planificación de mi clase', area: 'diagnostico', state: 'Documentada', detail: 'Presento la planificación aprobada de la única clase que impartí y explico los ajustes realizados durante su ejecución.' },
   { id: 8, title: 'Evidencias de la práctica docente', area: 'practica', state: 'Documentada', detail: 'Presento fotografías y recursos de mis siete visitas, junto con los registros de cada jornada.' },
   { id: 9, title: 'Diario reflexivo por jornada', area: 'practica', state: 'Documentada', detail: 'Describo mi participación y mis aprendizajes en las siete visitas.' },
   { id: 10, title: 'Evaluación y retroalimentación', area: 'reflexion', state: 'Documentada', detail: 'Presento mi autoevaluación y resumo los comentarios verbales que recibí de la tutora.' },
@@ -50,6 +50,16 @@ export const visits = [
   { number: 7, date: '7 de noviembre de 2026', title: 'Acompañamiento digital y cierre de la práctica', state: 'Documentada', summary: 'En mi séptima visita, de 8:30 a. m. a 4:00 p. m., acompañé a la Licda. Zeyda Priscila Aguilar en Estudios Sociales de segundo año de bachillerato. Asistieron aproximadamente seis estudiantes. La clase abordó la lección «La legislación laboral» y actividades sobre demanda laboral y medio ambiente.', role: 'Ayudé a crear documentos compartidos en Google Docs para un informe sobre demanda laboral. En Canva orienté la elaboración de una infografía ambiental, el uso de plantillas y la redacción de instrucciones para sus funciones de IA. Observé el repaso grupal e individual con Kahoot y brindé apoyo puntual a quienes lo necesitaron. Durante el almuerzo compartimos con la docente y el grupo como agradecimiento.', reflection: 'Al cerrar la práctica sentí nostalgia y gratitud. Recordé los nervios del primer día y reconocí que ahora me sentía más seguro al relacionarme con el grupo. Esta jornada me confirmó que integrar tecnología requiere explicar con paciencia y atender las distintas habilidades digitales. Me llevo aprendizajes sobre observación, planificación, comunicación y acompañamiento.', evidence: 'Mi registro de la jornada 7 y la guía de observación del 7 de noviembre describen las actividades. Las fotografías muestran el compartir de cierre y al equipo de práctica.' },
 ];
 
+export const visitRecords = {
+  1: 'https://drive.google.com/file/d/1U-mrLh6Sq8ThZvbx5hseUDVn40qsNDKT/view',
+  2: 'https://drive.google.com/file/d/1n33l2QweeWVwzNfQGpD-G7YjcarnVkm6/view',
+  3: 'https://drive.google.com/file/d/1qT_0o0MAWnAAlvmyUxxCOwzpgE42uOlL/view',
+  4: 'https://drive.google.com/file/d/1PQFanjPHDThJrFXKvHM1Q4fO6Q-jDaLD/view',
+  5: 'https://drive.google.com/file/d/14vm8Bw3zJQWC4iYpVwbttF0m23hnAZMC/view',
+  6: 'https://drive.google.com/file/d/1QLeYN7SAOxwJVT6yIxXwaet3pHaQXer3/view',
+  7: `${import.meta.env.BASE_URL}documentos/registro-jornada-7.pdf`,
+};
+
 export const diagnosticFindings = [
   { value: 4, total: 5, label: 'Participantes que reportaron dificultad para estudiar de forma independiente' },
   { value: 3, total: 5, label: 'Participantes que solicitaron más actividades prácticas' },
@@ -59,9 +69,10 @@ export const diagnosticFindings = [
 export const sources = [
   { label: 'Consigna y rúbrica DDP1109', description: 'Estructura obligatoria y criterios de evaluación.' },
   { label: 'Informe diagnóstico del equipo (2026)', description: 'Contexto, cuestionario, entrevistas y FODA; muestra de cinco participantes en los resultados citados.' },
+  { label: 'Cuestionario y entrevistas del diagnóstico (2026)', description: 'Instrumentos de consulta al estudiantado, a la docente de Estudios Sociales y a coordinación. Presento versiones públicas sin respuestas y hallazgos agregados.' },
   { label: 'Registros individuales y guías J1–J7', description: 'Mis actividades y reflexiones durante las siete visitas.' },
   { label: 'Propuesta grupal La Canadá Aprende (2026)', description: 'Documento académico del equipo y sitio educativo para repasar contenidos de cuatro asignaturas.' },
   { label: 'ConectaTIC 2.0', description: 'Recurso interactivo utilizado en la primera clase impartida el 24 de octubre; la versión pública funciona sin sincronización entre dispositivos.' },
   { label: 'Planificación aprobada de la lección 2 (24 de octubre de 2026)', description: 'Mi planificación está disponible en PDF. Los tiempos y la asistencia estimada corresponden al diseño previo a la clase.' },
-  { label: 'Jornalización anual de Estudios Sociales y Cívica', description: 'Referencia temática orientativa; validar el avance efectivo con la tutora.' },
+  { label: 'Jornalización anual de Estudios Sociales y Cívica', description: 'La consulté como referencia temática y confirmé con la tutora el contenido de mi clase.' },
 ];
