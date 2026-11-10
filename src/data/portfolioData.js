@@ -60,6 +60,16 @@ export const visitRecords = {
   7: `${import.meta.env.BASE_URL}documentos/registro-jornada-7.pdf`,
 };
 
+export const visitActions = [
+  { number: 1, focus: 'Conocer la dinámica del aula', action: 'Observé la orientación de la docente y el trabajo individual con una línea de tiempo sobre transformaciones políticas mundiales.', evidence: 'Mi registro de la jornada 1 y la guía de observación J1.' },
+  { number: 2, focus: 'Acompañar la búsqueda de información', action: 'Observé la lectura y los ejercicios del libro de Estudios Sociales. Orienté búsquedas puntuales para que algunos estudiantes continuaran su trabajo.', evidence: 'Mi registro de la jornada 2 y la guía de observación J2.' },
+  { number: 3, focus: 'Colaborar con la institución y el grupo', action: 'Preparé materiales para las actividades patrias y, por la tarde, apoyé ejercicios proyectados y resueltos con el grupo.', evidence: 'Mi registro de la jornada 3 y la guía de observación J3.' },
+  { number: 4, focus: 'Guiar una investigación sin sustituir a la estudiante', action: 'Acompañé la investigación sobre el lago de Coatepeque, orienté preguntas para la IA y contrasté información en fuentes identificables en español.', evidence: 'Mi registro de la jornada 4 y la guía de observación J4.' },
+  { number: 5, focus: 'Acompañar las evaluaciones', action: 'Supervisé pruebas en Google Forms y en papel, y aclaré indicaciones sin proporcionar respuestas.', evidence: 'Mi registro de la jornada 5 y la guía de observación J5.' },
+  { number: 6, focus: 'Planificar e impartir mi clase', action: 'Desarrollé cinco misiones con ConectaTIC 2.0 y adapté el trabajo a una proyección compartida ante la falla de Internet.', evidence: 'Mi planificación aprobada, el recurso, el diario, la guía y el video de la jornada 6.' },
+  { number: 7, focus: 'Acompañar actividades digitales y cerrar la práctica', action: 'Orienté actividades en Google Docs y Canva, observé el repaso con Kahoot y compartí el cierre con la docente y el grupo.', evidence: 'Mi registro de la jornada 7, la guía de observación y las fotografías del cierre.' },
+];
+
 export const diagnosticFindings = [
   { value: 4, total: 5, label: 'Participantes que reportaron dificultad para estudiar de forma independiente' },
   { value: 3, total: 5, label: 'Participantes que solicitaron más actividades prácticas' },
