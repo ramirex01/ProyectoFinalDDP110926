@@ -50,11 +50,24 @@ def make(name, title, purpose, questions):
     doc.set_metadata({'title': title, 'author': 'Mario Elmer Ramírez Grande'})
     doc.save(output / name, garbage=4, deflate=True)
 
-source = fitz.open(root / 'private/diagnostico-originales/cuestionario-estudiante-1.pdf')
-public = fitz.open()
-public.insert_pdf(source)
-public.set_metadata({'title': 'Cuestionario al estudiantado - instrumento sin respuestas', 'author': 'Mario Elmer Ramírez Grande'})
-public.save(output / 'cuestionario-estudiantado-sin-respuestas.pdf', garbage=4, deflate=True)
+make('cuestionario-estudiantado-sin-respuestas.pdf', 'Cuestionario al estudiantado de segundo año de bachillerato',
+     'Preguntas sobre experiencia educativa, formas de aprendizaje, estudio autónomo, participación y acceso a tecnología.', [
+    '¿En qué rango de edad se encuentra?',
+    'Actualmente, además de estudiar, ¿realiza alguna de las siguientes actividades?',
+    'Antes de estudiar en esta modalidad, ¿había dejado de estudiar durante algún tiempo?',
+    '¿Qué actividades le ayudan más a comprender los temas?',
+    'Cuando debe realizar una actividad de estudio por su cuenta durante la semana, ¿qué tan fácil le resulta hacerlo?',
+    '¿Con qué frecuencia necesita ayuda adicional para comprender una explicación o realizar una actividad?',
+    '¿Con qué frecuencia participa durante las clases?',
+    'Cuando realiza actividades en clase, ¿cómo prefiere trabajar?',
+    'Cuando no comprende un tema o una indicación, ¿con qué frecuencia solicita ayuda al docente?',
+    '¿A cuáles de los siguientes dispositivos tiene acceso para realizar actividades de estudio?',
+    'Cuando necesita Internet para estudiar, ¿cómo describiría su acceso?',
+    '¿Con qué frecuencia utiliza algún dispositivo tecnológico para realizar actividades de estudio?',
+    '¿Qué recursos digitales utiliza para estudiar?',
+    '¿Qué dificultades tiene cuando utiliza tecnología para estudiar?',
+    '¿Qué tipo de apoyo considera que le ayudaría más en sus clases?',
+])
 
 make('entrevista-docente-preguntas.pdf', 'Entrevista semiestructurada a la docente de Estudios Sociales',
      'Preguntas sobre el grupo, la enseñanza, la evaluación, los recursos y el apoyo tecnológico y pedagógico.', [
